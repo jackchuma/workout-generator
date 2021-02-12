@@ -11,7 +11,7 @@ const exerciseBank = {
 };
 
 function generateTemplate() {
-    return Math.floor(Math.random() * 4);
+    return Math.floor(Math.random() * 5);
 };
 
 function generateExercise(array) {
@@ -146,6 +146,36 @@ function gatherWorkout() {
         console.log(`C2: ${ex7} - 2 x ${ex7Reps}`);
         console.log(`C3: ${ex8} - 2 x ${ex8Reps}`);
         console.log(`Optional: ${ex9} - 2 x ${ex9Reps}`);
+    };
+
+    if (template === 4) {
+        const ex1 = generateExercise(exerciseBank.horizontalPull);
+        const ex2 = generateExercise(exerciseBank.horizontalPush);
+        const ex3 = generateExercise(exerciseBank.verticalPull);
+        const ex4 = generateExercise(exerciseBank.verticalPush);
+        const ex5 = generateExercise(exerciseBank.squat);
+        const ex6 = generateExercise(exerciseBank.lunge);
+        const ex7 = generateExercise(exerciseBank.hinge);
+        const ex8 = generateExercise(exerciseBank.isolation);
+
+        const ex1Reps = Math.floor(Math.random() * 4 + 4);
+        const ex2Reps = Math.floor(Math.random() * 5 + 2);
+        const ex3Reps = Math.floor(Math.random() * 4 + 4);
+        const ex4Reps = Math.floor(Math.random() * 4 + 3);
+        const ex5Reps = Math.floor(Math.random() * 3 + 3);
+        const ex6Reps = Math.floor(Math.random() * 3 + 3);
+        const ex7Reps = Math.floor(Math.random() * 3 + 3);
+        const ex8Reps = Math.floor(Math.random() * 5 + 8);
+
+        console.log('Basic Routine - Upper Body Focused');
+        console.log(`A1: ${ex1} - 2 x ${ex1Reps}`);
+        console.log(`A2: ${ex2} - 2 x ${ex2Reps}`);
+        console.log(`B1: ${ex3} - 2 x ${ex3Reps}`);
+        console.log(`B2: ${ex4} - 2 x ${ex4Reps}`);
+        console.log(`C1: ${ex5} - 2 x ${ex5Reps}`);
+        console.log(`C2: ${ex6} - 2 x ${ex6Reps}`);
+        console.log(`C3: ${ex7} - 2 x ${ex7Reps}`);
+        console.log(`Optional: ${ex8} - 2 x ${ex8Reps}`);
     };
 };
 
