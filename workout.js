@@ -7,7 +7,7 @@ const exerciseBank = {
     horizontalPush: ['Barbell Bench Press', 'DB Bench Press', 'Barbell Incline Bench Press', 'Barbell Floor Press', 'DB Floor Press', 'Push Up', 'Iso Glute Bridge DB Bench Press (T-spine on bench)', 'SL Push Ups foot on med ball', 'Diamond Push Ups', 'Chinese Plank Sprinter Chaos T-Bench Press'],
     horizontalPull: ['Prone Incline DB Row', 'Bent Over Barbell Row', 'Seated Cable Row', 'Trap Bar Bent Over Row', 'Sprinter Inverted Rows', 'Tripod DB Rows', 'High Plank DB Rows', 'Split Stance (Rear foot on chaos band) RDL + Barbell Row'],
     isolation: ['Barbell Curls', 'Standing DB Curls', 'Concentration Curls', 'Sprinter Glute Bridge', 'SL Ham Curl w/ slider', 'PB Ham Curls', 'Ham Curls w/ sliders', 'Nordic Ham Curls', 'ISO Split Squat + KB Lateral Raises', 'Reverse Nordic Curls', 'DB Tricep Kickback', 'Cable Rope Tricep Pushdowns', 'Cable Rope OH Tricep Extensions', 'Standing Calf Raises', 'Standing SL Calf Raises', 'Toe Taps', 'Weighted SL Glute Bridges', 'Cable Chest Flys', 'Band Chaos Sprinter Glute Bridge'],
-    gluteBridge: ['Sprinter Glute Bridge', 'Weighted SL Glute Bridge', 'Sprinter Glute Bridge on Chaos Band', 'Weighted Glute Bridge'];
+    gluteBridge: ['Sprinter Glute Bridge', 'Weighted SL Glute Bridge', 'Sprinter Glute Bridge on Chaos Band', 'Weighted Glute Bridge']
 };
 
 function generateTemplate() {
