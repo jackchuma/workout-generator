@@ -10,12 +10,11 @@ const exerciseBank = {
     stabilityLunge: ['w/ front foot on pad', 'w/ back foot on roller', 'w/ back foot on MB', 'w/ back foot on PB', 'w/ eyes closed'],
     verticalPush: ['Standing Barbell OH Press', 'Standing DB OH Press', 'Standing DB SA OH Press', 'Bottoms-up Split Stance OH Press', 'Bench Seated Barbell OH Press', 'Bench Seated DB OH Press', 'Bench Seated SA DB OH Press', 'Kneeling Barbell OH Press', 'Kneeling DB OH Press', 'Kneeling DB SA OH Press', 'Kneeling Bottoms-up OH Press', '1/2 Kneeling Barbell OH Press', '1/2 Kneeling DB OH Press', '1/2 Kneeling DB SA OH Press', '1/2 Kneeling Bottoms-up OH Press', 'Floor Seated Barbell OH Press', 'Floor Seated DB OH Press', 'Floor Seated DB SA OH Press', 'Floor Seated Bottoms-up OH Press', 'PB Seated Barbell OH Press', 'PB Seated DB OH Press', 'PB Seated DB SA OH Press', 'PB Seated Bottoms-up OH Press'],
     coreVerticalPush: ['Kneeling Barbell OH Press', 'Kneeling DB OH Press', 'Kneeling DB SA OH Press', 'Kneeling Bottoms-up OH Press', '1/2 Kneeling Barbell OH Press', '1/2 Kneeling DB OH Press', '1/2 Kneeling DB SA OH Press', '1/2 Kneeling Bottoms-up OH Press', 'Floor Seated Barbell OH Press', 'Floor Seated DB OH Press', 'Floor Seated DB SA OH Press', 'Floor Seated Bottoms-up OH Press', 'PB Seated Barbell OH Press', 'PB Seated DB OH Press', 'PB Seated DB SA OH Press', 'PB Seated Bottoms-up OH Press'],
-    stabilityVerticalPush: [],
     verticalPull: ['Pull Up', 'Chin Up', 'Seated Lat Pulldown', 'Sprinter Pull Ups', 'Seated SA Lat Pulldown', 'Split Stance SA Lat Pulldown', 'Kneeling Lat Pulldown', '1/2 Kneeling Lat Pulldown', 'Kneeling SA Lat Pulldown', '1/2 Kneeling SA Lat Pulldown'],
     coreVerticalPull: ['Split Stance SA Lat Pulldown', 'Kneeling Lat Pulldown', '1/2 Kneeling Lat Pulldown', 'Kneeling SA Lat Pulldown', '1/2 Kneeling SA Lat Pulldown'],
-    singleArmVerticalPull: [],
-    horizontalPush: ['Barbell Bench Press', 'DB Bench Press', 'Barbell Incline Bench Press', 'Barbell Floor Press', 'DB Floor Press', 'Push Up', 'Iso Glute Bridge DB Bench Press (T-spine on bench)', 'SL Push Ups foot on med ball', 'Diamond Push Ups', 'Chinese Plank Sprinter Chaos T-Bench Press', 'PB SA DB Bench', 'SA Floor Press'],
-    stabilityHorizontalPush: [],
+    singleArmVerticalPull: ['Seated SA Lat Pulldown', 'Split Stance SA Lat Pulldown', 'Kneeling SA Lat Pulldown', '1/2 Kneeling SA Lat Pulldown'],
+    horizontalPush: ['Barbell Bench Press', 'DB Bench Press', 'Barbell Incline Bench Press', 'Barbell Floor Press', 'DB Floor Press', 'Push Up', 'Iso Glute Bridge DB Bench Press (T-spine on bench)', 'SL Push Ups foot on med ball', 'Diamond Push Ups', 'Chinese Plank Sprinter Chaos T-Bench Press', 'PB SA DB Bench', 'SA Floor Press', 'Bottoms-up Bench Press', 'Bottoms-up Floor Press', 'Bottoms-up Bench on PB', 'Bottoms-up Trap Bar Bench Press', 'TRX Push Ups', 'Push Ups on PB', 'Foam Roller DB Bench', 'Foam Roller SA DB Bench', 'DB Bench on PB'],
+    stabilityHorizontalPush: ['Bottoms-up Bench Press', 'Bottoms-up Floor Press', 'Bottoms-up Bench on PB', 'Bottoms-up Trap Bar Bench Press', 'TRX Push Ups', 'Push Ups on PB', 'Foam Roller DB Bench', 'Foam Roller SA DB Bench', 'DB Bench on PB', 'DB SA Bench on PB'],
     horizontalPull: ['Prone Incline DB Row', 'Bent Over Barbell Row', 'Seated Cable Row', 'Trap Bar Bent Over Row', 'Sprinter Inverted Rows', 'Tripod DB Rows', 'High Plank DB Rows', 'Split Stance (Rear foot on chaos band) RDL + Barbell Row', 'SA TRX Rows', 'SA Seated Cable Row', 'SL Inverted Rows', 'SA SL Inverted Rows', 'SL Bent Over Barbell Rows', 'SL Bent Over DB Rows', 'SL SA Bent Over DB Rows', 'Bird Dog Rows', 'Kickstand Bent Over Barbell Rows', 'Kickstand Bent Over DB Rows', 'Kickstand Bent Over SA Rows'],
     coreHorizontalPull: ['SA TRX Rows', 'Tripod DB Rows', 'High Plank DB Rows', 'SA Seated Cable Row', 'SA SL Inverted Rows', 'SL SA Bent Over DB Rows', 'Bird Dog Rows', 'Kickstand Bent Over SA Rows'],
     stabilityHorizontalPull: ['SL Inverted Rows', 'SA SL Inverted Rows', 'SA Inverted Rows', 'SL Bent Over Barbell Rows', 'SL Bent Over DB Rows', 'SL SA Bent Over DB Rows', 'Bird Dog Rows', 'Kickstand Bent Over Barbell Rows', 'Kickstand Bent Over DB Rows', 'Kickstand Bent Over SA Rows'],
@@ -268,7 +267,7 @@ function gatherWorkout() {
         const ex5End = generateExercise(exerciseBank.stabilityLunge);
         const ex6 = generateExercise(exerciseBank.stabilityHinge);
         const ex7 = generateExercise(exerciseBank.singleArmVerticalPull);
-        const ex8 = generateExercise(exerciseBank.stabilityVerticalPush);
+        const ex8 = generateExercise(exerciseBank.coreVerticalPush);
         const ex9 = generateExercise(exerciseBank.isolation);
 
         const ex1Reps = Math.floor(Math.random() * 3 + 2);
