@@ -459,6 +459,62 @@ function gatherWorkout() {
         console.log(`Optional: ${ex8} - 2 x ${ex8Reps}`);
         console.log('');
     };
+
+    if (template === 10) {
+        const ex1 = generateExercise(exerciseBank.balance);
+        const ex2 = generateExercise(exerciseBank.explosive);
+        const ex3 = generateExercise(exerciseBank.squat);
+        const ex4 = generateExercise(exerciseBank.antiExtension);
+        const ex5 = generateExercise(exerciseBank.horizontalPull);
+        const ex6 = generateExercise(exerciseBank.horizontalPush);
+        const ex7 = generateExercise(exerciseBank.gluteBridge);
+        const ex8 = generateExercise(exerciseBank.hinge);
+        const ex9 = generateExercise(exerciseBank.lunge);
+        const ex10 = generateExercise(exerciseBank.verticalPull);
+        const ex11 = generateExercise(exerciseBank.verticalPush);
+        const ex12 = generateExercise(exerciseBank.carry);
+        const ex13 = generateExercise(exerciseBank.straightArmPulldown);
+
+        const ex1Reps = Math.floor(Math.random() * 3 + 2);
+        const ex2Reps = Math.floor(Math.random() * 3 + 2);
+        const ex3Reps = Math.floor(Math.random() * 4 + 2);
+        const ex4Reps = Math.floor(Math.random() * 3 + 2);
+        const ex5Reps = Math.floor(Math.random() * 3 + 4);
+        const ex6Reps = Math.floor(Math.random() * 4 + 2);
+        const ex7Reps = Math.floor(Math.random() * 2 + 5);
+        const ex8Reps = Math.floor(Math.random() * 3 + 3);
+        const ex9Reps = Math.floor(Math.random() * 2 + 4);
+        const ex10Reps = Math.floor(Math.random() * 3 + 4);
+        const ex11Reps = Math.floor(Math.random() * 3 + 3);
+        const ex12Reps = Math.floor(Math.random() * 2 + 4);
+        const ex13Reps = Math.floor(Math.random() * 3 + 5);
+
+        console.log('');
+        console.log('Advanced Full Spectrum Day');
+        console.log('');
+        console.log(`W1: ${warmUpA} - 2 x 10`);
+        console.log(`W2: ${warmUpB} - 2 x 10`);
+        console.log(`W3: ${warmUpC} - 2 x 20 seconds`);
+        console.log('');
+        console.log(`A1: ${ex1} - 2 x ${ex1Reps}0 seconds`);
+        console.log(`A2: ${ex2} - 2 x ${ex2Reps}`);
+        console.log(`A3: ${ex3} - 2 x ${ex3Reps}`);
+        console.log('');
+        console.log(`B1: ${ex4} - 2 x ${ex4Reps}`);
+        console.log(`B2: ${ex5} - 2 x ${ex5Reps}`);
+        console.log(`B3: ${ex6} - 2 x ${ex6Reps}`);
+        console.log('');
+        console.log(`C1: ${ex7} - 2 x ${ex7Reps}`);
+        console.log(`C2: ${ex8} - 2 x ${ex8Reps}`);
+        console.log(`C3: ${ex9} - 2 x ${ex9Reps}`);
+        console.log('');
+        console.log(`D1: ${ex10} - 2 x ${ex10Reps}`);
+        console.log(`D2: ${ex11} - 2 x ${ex11Reps}`);
+        console.log('');
+        console.log(`E1: ${ex12} - 2 x ${ex12Reps}`);
+        console.log(`E2: ${ex13} - 2 x ${ex13Reps}`);
+        console.log('');
+    };
 };
 
 gatherWorkout();
