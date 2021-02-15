@@ -40,6 +40,9 @@ function checkForExercise(array, ex) {
 
 function gatherWorkout() {
     const template = generateTemplate();
+    const warmUpA = generateExercise(exerciseBank.lowerWarmUp);
+    const warmUpB = generateExercise(exerciseBank.upperWarmUp);
+    const warmUpC = generateExercise(exerciseBank.balance);
 
     if (template === 0) {
         const ex1 = generateExercise(exerciseBank.squat);
@@ -60,15 +63,25 @@ function gatherWorkout() {
         const ex7Reps = Math.floor(Math.random() * 4 + 3);
         const ex8Reps = Math.floor(Math.random() * 5 + 8);
 
+        console.log('');
         console.log('Basic Routine - Squat, Horizontal Push & Pull Focused');
+        console.log('');
+        console.log(`W1: ${warmUpA} - 2 x 10`);
+        console.log(`W2: ${warmUpB} - 2 x 10`);
+        console.log(`W3: ${warmUpC} - 2 x 20 seconds`);
+        console.log('');
         console.log(`A1: ${ex1} - 2 x ${ex1Reps}`);
         console.log(`A2: ${ex2} - 2 x ${ex2Reps}`);
         console.log(`A3: ${ex3} - 2 x ${ex3Reps}`);
+        console.log('');
         console.log(`B1: ${ex4} - 2 x ${ex4Reps}`);
         console.log(`B2: ${ex5} - 2 x ${ex5Reps}`);
+        console.log('');
         console.log(`C1: ${ex6} - 2 x ${ex6Reps}`);
         console.log(`C2: ${ex7} - 2 x ${ex7Reps}`);
+        console.log('');
         console.log(`Optional: ${ex8} - 2 x ${ex8Reps}`);
+        console.log('');
     };
 
     if (template === 1) {
@@ -90,15 +103,25 @@ function gatherWorkout() {
         const ex7Reps = Math.floor(Math.random() * 3 + 3);
         const ex8Reps = Math.floor(Math.random() * 5 + 8);
 
+        console.log('');
         console.log('Basic Routine - Squat, Vertical Push & Pull Focused');
+        console.log('');
+        console.log(`W1: ${warmUpA} - 2 x 10`);
+        console.log(`W2: ${warmUpB} - 2 x 10`);
+        console.log(`W3: ${warmUpC} - 2 x 20 seconds`);
+        console.log('');
         console.log(`A1: ${ex1} - 2 x ${ex1Reps}`);
         console.log(`A2: ${ex2} - 2 x ${ex2Reps}`);
         console.log(`A3: ${ex3} - 2 x ${ex3Reps}`);
+        console.log('');
         console.log(`B1: ${ex4} - 2 x ${ex4Reps}`);
         console.log(`B2: ${ex5} - 2 x ${ex5Reps}`);
+        console.log('');
         console.log(`C1: ${ex6} - 2 x ${ex6Reps}`);
         console.log(`C2: ${ex7} - 2 x ${ex7Reps}`);
+        console.log('');
         console.log(`Optional: ${ex8} - 2 x ${ex8Reps}`);
+        console.log('');
     };
 
     if (template === 2) {
@@ -120,15 +143,25 @@ function gatherWorkout() {
         const ex7Reps = Math.floor(Math.random() * 4 + 3);
         const ex8Reps = Math.floor(Math.random() * 5 + 8);
 
+        console.log('');
         console.log('Basic Routine - Lunge, Horizontal Push & Pull Focused');
+        console.log('');
+        console.log(`W1: ${warmUpA} - 2 x 10`);
+        console.log(`W2: ${warmUpB} - 2 x 10`);
+        console.log(`W3: ${warmUpC} - 2 x 20 seconds`);
+        console.log('');
         console.log(`A1: ${ex1} - 2 x ${ex1Reps}`);
         console.log(`A2: ${ex2} - 2 x ${ex2Reps}`);
         console.log(`A3: ${ex3} - 2 x ${ex3Reps}`);
+        console.log('');
         console.log(`B1: ${ex4} - 2 x ${ex4Reps}`);
         console.log(`B2: ${ex5} - 2 x ${ex5Reps}`);
+        console.log('');
         console.log(`C1: ${ex6} - 2 x ${ex6Reps}`);
         console.log(`C2: ${ex7} - 2 x ${ex7Reps}`);
+        console.log('');
         console.log(`Optional: ${ex8} - 2 x ${ex8Reps}`);
+        console.log('');
     };
 
     if (template === 3) {
@@ -152,16 +185,26 @@ function gatherWorkout() {
         const ex8Reps = Math.floor(Math.random() * 4 + 3);
         const ex9Reps = Math.floor(Math.random() * 5 + 8);
 
+        console.log('');
         console.log('Basic Routine - Hip Hinge Focused');
+        console.log('');
+        console.log(`W1: ${warmUpA} - 2 x 10`);
+        console.log(`W2: ${warmUpB} - 2 x 10`);
+        console.log(`W3: ${warmUpC} - 2 x 20 seconds`);
+        console.log('');
         console.log(`A1: ${ex1} - 2 x ${ex1Reps}`);
         console.log(`A2: ${ex2} - 2 x ${ex2Reps}`);
+        console.log('');
         console.log(`B1: ${ex3} - 2 x ${ex3Reps}`);
         console.log(`B2: ${ex4} - 2 x ${ex4Reps}`);
         console.log(`B3: ${ex5} - 2 x ${ex5Reps}`);
+        console.log('');
         console.log(`C1: ${ex6} - 2 x ${ex6Reps}`);
         console.log(`C2: ${ex7} - 2 x ${ex7Reps}`);
         console.log(`C3: ${ex8} - 2 x ${ex8Reps}`);
+        console.log('');
         console.log(`Optional: ${ex9} - 2 x ${ex9Reps}`);
+        console.log('');
     };
 
     if (template === 4) {
@@ -183,15 +226,25 @@ function gatherWorkout() {
         const ex7Reps = Math.floor(Math.random() * 3 + 3);
         const ex8Reps = Math.floor(Math.random() * 5 + 8);
 
+        console.log('');
         console.log('Basic Routine - Upper Body Focused');
+        console.log('');
+        console.log(`W1: ${warmUpA} - 2 x 10`);
+        console.log(`W2: ${warmUpB} - 2 x 10`);
+        console.log(`W3: ${warmUpC} - 2 x 20 seconds`);
+        console.log('');
         console.log(`A1: ${ex1} - 2 x ${ex1Reps}`);
         console.log(`A2: ${ex2} - 2 x ${ex2Reps}`);
+        console.log('');
         console.log(`B1: ${ex3} - 2 x ${ex3Reps}`);
         console.log(`B2: ${ex4} - 2 x ${ex4Reps}`);
+        console.log('');
         console.log(`C1: ${ex5} - 2 x ${ex5Reps}`);
         console.log(`C2: ${ex6} - 2 x ${ex6Reps}`);
         console.log(`C3: ${ex7} - 2 x ${ex7Reps}`);
+        console.log('');
         console.log(`Optional: ${ex8} - 2 x ${ex8Reps}`);
+        console.log('');
     };
 
     if (template === 5) {
@@ -215,16 +268,27 @@ function gatherWorkout() {
         const ex8Reps = Math.floor(Math.random() * 2 + 4);
         const ex9Reps = Math.floor(Math.random() * 5 + 8);
 
+        console.log('');
         console.log('Basic Routine - Lower Body Focused');
+        console.log('');
+        console.log(`W1: ${warmUpA} - 2 x 10`);
+        console.log(`W2: ${warmUpB} - 2 x 10`);
+        console.log(`W3: ${warmUpC} - 2 x 20 seconds`);
+        console.log('');
         console.log(`A1: ${ex1} - 2 x ${ex1Reps}`);
         console.log(`A2: ${ex2} - 2 x ${ex2Reps}0 seconds`);
+        console.log('');
         console.log(`B1: ${ex3} - 2 x ${ex3Reps}`);
         console.log(`B2: ${ex4} - 2 x ${ex4Reps}`);
+        console.log('');
         console.log(`C1: ${ex5} - 2 x ${ex5Reps}`);
         console.log(`C2: ${ex6} - 2 x ${ex6Reps}`);
+        console.log('');
         console.log(`D1: ${ex7} - 2 x ${ex7Reps}`);
         console.log(`D2: ${ex8} - 2 x ${ex8Reps}`);
+        console.log('');
         console.log(`Optional: ${ex9} - 2 x ${ex9Reps}`);
+        console.log('');
     };
 
     if (template === 6) {
@@ -248,16 +312,27 @@ function gatherWorkout() {
         const ex8Reps = Math.floor(Math.random() * 2 + 4);
         const ex9Reps = Math.floor(Math.random() * 5 + 8);
 
+        console.log('');
         console.log('Core Focused Day');
+        console.log('');
+        console.log(`W1: ${warmUpA} - 2 x 10`);
+        console.log(`W2: ${warmUpB} - 2 x 10`);
+        console.log(`W3: ${warmUpC} - 2 x 20 seconds`);
+        console.log('');
         console.log(`A1: ${ex1} - 2 x ${ex1Reps}0 seconds`);
         console.log(`A2: ${ex2} - 2 x ${ex2Reps}`);
+        console.log('');
         console.log(`B1: ${ex3} - 2 x ${ex3Reps}`);
         console.log(`B2: ${ex4} - 2 x ${ex4Reps}`);
+        console.log('');
         console.log(`C1: ${ex5} - 2 x ${ex5Reps}`);
         console.log(`C2: ${ex6} - 2 x ${ex6Reps}`);
+        console.log('');
         console.log(`D1: ${ex7} - 2 x ${ex7Reps}`);
         console.log(`D2: ${ex8} - 2 x ${ex8Reps}`);
+        console.log('');
         console.log(`Optional: ${ex9} - 2 x ${ex9Reps}`);
+        console.log('');
     };
 
     if (template === 7) {
@@ -282,16 +357,27 @@ function gatherWorkout() {
         const ex8Reps = Math.floor(Math.random() * 2 + 4);
         const ex9Reps = Math.floor(Math.random() * 5 + 8);
 
+        console.log('');
         console.log('Stabilization and Balance Focused Day');
+        console.log('');
+        console.log(`W1: ${warmUpA} - 2 x 10`);
+        console.log(`W2: ${warmUpB} - 2 x 10`);
+        console.log(`W3: ${warmUpC} - 2 x 20 seconds`);
+        console.log('');
         console.log(`A1: ${ex1} - 2 x ${ex1Reps}0 seconds`);
         console.log(`A2: ${ex2} - 2 x ${ex2Reps}`);
+        console.log('');
         console.log(`B1: ${ex3} - 2 x ${ex3Reps}`);
         console.log(`B2: ${ex4} - 2 x ${ex4Reps}`);
+        console.log('');
         console.log(`C1: ${ex5Start} ${ex5End} - 2 x ${ex5Reps}`);
         console.log(`C2: ${ex6} - 2 x ${ex6Reps}`);
+        console.log('');
         console.log(`D1: ${ex7} - 2 x ${ex7Reps}`);
         console.log(`D2: ${ex8} - 2 x ${ex8Reps}`);
+        console.log('');
         console.log(`Optional: ${ex9} - 2 x ${ex9Reps}`);
+        console.log('');
     };
 
     if (template === 8) {
@@ -313,15 +399,25 @@ function gatherWorkout() {
         const ex7Reps = Math.floor(Math.random() * 3 + 3);
         const ex8Reps = Math.floor(Math.random() * 5 + 8);
 
+        console.log('');
         console.log('Speed and Power Day');
+        console.log('');
+        console.log(`W1: ${warmUpA} - 2 x 10`);
+        console.log(`W2: ${warmUpB} - 2 x 10`);
+        console.log(`W3: ${warmUpC} - 2 x 20 seconds`);
+        console.log('');
         console.log(`A1: ${ex1} Jumps - 2 x ${ex1Reps}`);
         console.log(`A2: ${ex2} - 2 x ${ex2Reps}`);
         console.log(`A3: ${ex3} - 2 x ${ex3Reps}`);
+        console.log('');
         console.log(`B1: ${ex4} Jumps - 2 x ${ex4Reps}`);
         console.log(`B2: ${ex5} Jumps - 2 x ${ex5Reps}`);
+        console.log('');
         console.log(`C1: ${ex6} - 2 x ${ex6Reps}`);
         console.log(`C2: ${ex7} - 2 x ${ex7Reps}`);
+        console.log('');
         console.log(`Optional: ${ex8} - 2 x ${ex8Reps}`);
+        console.log('');
     };
 
     if (template === 9) {
@@ -343,15 +439,25 @@ function gatherWorkout() {
         const ex7Reps = Math.floor(Math.random() * 2 + 6);
         const ex8Reps = Math.floor(Math.random() * 5 + 8);
 
+        console.log('');
         console.log('Endurance and Conditioning Day');
+        console.log('');
+        console.log(`W1: ${warmUpA} - 2 x 10`);
+        console.log(`W2: ${warmUpB} - 2 x 10`);
+        console.log(`W3: ${warmUpC} - 2 x 20 seconds`);
+        console.log('');
         console.log(`A1: ${ex1} - 2 x ${ex1Reps}`);
         console.log(`A2: ${ex2} - 2 x ${ex2Reps}`);
         console.log(`A3: ${ex3} - 2 x ${ex3Reps}`);
+        console.log('');
         console.log(`B1: ${ex4} - 2 x ${ex4Reps}`);
         console.log(`B2: ${ex5} - 2 x ${ex5Reps}`);
+        console.log('');
         console.log(`C1: ${ex6} - 2 x ${ex6Reps}`);
         console.log(`C2: ${ex7} - 2 x ${ex7Reps}`);
+        console.log('');
         console.log(`Optional: ${ex8} - 2 x ${ex8Reps}`);
+        console.log('');
     };
 };
 
