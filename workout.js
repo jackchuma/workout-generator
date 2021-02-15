@@ -27,7 +27,7 @@ const exerciseBank = {
 };
 
 function generateTemplate() {
-    return Math.floor(Math.random() * 9);
+    return Math.floor(Math.random() * 10);
 };
 
 function generateExercise(array) {
@@ -319,6 +319,36 @@ function gatherWorkout() {
         console.log(`A3: ${ex3} - 2 x ${ex3Reps}`);
         console.log(`B1: ${ex4} Jumps - 2 x ${ex4Reps}`);
         console.log(`B2: ${ex5} Jumps - 2 x ${ex5Reps}`);
+        console.log(`C1: ${ex6} - 2 x ${ex6Reps}`);
+        console.log(`C2: ${ex7} - 2 x ${ex7Reps}`);
+        console.log(`Optional: ${ex8} - 2 x ${ex8Reps}`);
+    };
+
+    if (template === 9) {
+        const ex1 = generateExercise(exerciseBank.squat);
+        const ex2 = generateExercise(exerciseBank.horizontalPull);
+        const ex3 = generateExercise(exerciseBank.horizontalPush);
+        const ex4 = generateExercise(exerciseBank.hinge);
+        const ex5 = generateExercise(exerciseBank.lunge);
+        const ex6 = generateExercise(exerciseBank.verticalPull);
+        const ex7 = generateExercise(exerciseBank.verticalPush);
+        const ex8 = generateExercise(exerciseBank.isolation);
+
+        const ex1Reps = Math.floor(Math.random() * 4 + 5);
+        const ex2Reps = Math.floor(Math.random() * 3 + 7);
+        const ex3Reps = Math.floor(Math.random() * 4 + 5);
+        const ex4Reps = Math.floor(Math.random() * 2 + 7);
+        const ex5Reps = Math.floor(Math.random() * 3 + 6);
+        const ex6Reps = Math.floor(Math.random() * 2 + 8);
+        const ex7Reps = Math.floor(Math.random() * 2 + 6);
+        const ex8Reps = Math.floor(Math.random() * 5 + 8);
+
+        console.log('Endurance and Conditioning Day');
+        console.log(`A1: ${ex1} - 2 x ${ex1Reps}`);
+        console.log(`A2: ${ex2} - 2 x ${ex2Reps}`);
+        console.log(`A3: ${ex3} - 2 x ${ex3Reps}`);
+        console.log(`B1: ${ex4} - 2 x ${ex4Reps}`);
+        console.log(`B2: ${ex5} - 2 x ${ex5Reps}`);
         console.log(`C1: ${ex6} - 2 x ${ex6Reps}`);
         console.log(`C2: ${ex7} - 2 x ${ex7Reps}`);
         console.log(`Optional: ${ex8} - 2 x ${ex8Reps}`);
