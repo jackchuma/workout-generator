@@ -30,7 +30,7 @@ const exerciseBank = {
 };
 
 function generateTemplate() {
-    return Math.floor(Math.random() * 11);
+    return Math.floor(Math.random() * 12);
 };
 
 function generateExercise(array) {
@@ -512,6 +512,56 @@ function gatherWorkout() {
         console.log('');
         console.log(`E1: ${ex12} - 2 x ${ex12Reps}0 yards`);
         console.log(`E2: ${ex13} - 2 x ${ex13Reps}`);
+        console.log('');
+    };
+
+    if (template === 11) {
+        const ex1 = generateExercise(exerciseBank.squat);
+        const ex2 = generateExercise(exerciseBank.antiExtension);
+        const ex3 = generateExercise(exerciseBank.explosive);
+        const ex4 = generateExercise(exerciseBank.gluteBridge);
+        const ex5 = generateExercise(exerciseBank.hinge);
+        const ex6 = generateExercise(exerciseBank.lunge);
+        const ex7 = generateExercise(exerciseBank.horizontalPull);
+        const ex8 = generateExercise(exerciseBank.horizontalPush);
+        const ex9 = generateExercise(exerciseBank.verticalPull);
+        const ex10 = generateExercise(exerciseBank.verticalPush);
+        const ex11 = generateExercise(exerciseBank.isolation);
+
+        const ex1Reps = Math.floor(Math.random() * 4 + 2);
+        const ex2Reps = Math.floor(Math.random() * 3 + 2);
+        const ex3Reps = Math.floor(Math.random() * 2 + 4);
+        const ex4Reps = Math.floor(Math.random() * 4 + 5);
+        const ex5Reps = Math.floor(Math.random() * 3 + 3);
+        const ex6Reps = Math.floor(Math.random() * 2 + 4);
+        const ex7Reps = Math.floor(Math.random() * 2 + 4);
+        const ex8Reps = Math.floor(Math.random() * 3 + 2);
+        const ex9Reps = Math.floor(Math.random() * 3 + 4);
+        const ex10Reps = Math.floor(Math.random() * 3 + 3);
+        const ex11Reps = Math.floor(Math.random() * 5 + 8);
+
+        console.log('');
+        console.log('Heavy Lower and Light Explosive Upper Day');
+        console.log('');
+        console.log(`W1: ${warmUpA} - 2 x 10`);
+        console.log(`W2: ${warmUpB} - 2 x 10`);
+        console.log(`W3: ${warmUpC} - 2 x 20 seconds`);
+        console.log('');
+        console.log(`A1: ${ex1} - 2 x ${ex1Reps}`);
+        console.log(`A2: ${ex2} - 2 x ${ex2Reps}0 seconds`);
+        console.log(`A3: ${ex3} - 2 x ${ex3Reps}`);
+        console.log('');
+        console.log(`B1: ${ex4} - 2 x ${ex4Reps} (optional)`);
+        console.log(`B2: ${ex5} - 2 x ${ex5Reps}`);
+        console.log(`B3: ${ex6} - 2 x ${ex6Reps}`);
+        console.log('');
+        console.log(`C1: ${ex7} - 2 x ${ex7Reps} (light weight)`);
+        console.log(`C2: ${ex8} - 2 x ${ex8Reps} (light weight)`);
+        console.log('');
+        console.log(`D1: ${ex9} - 2 x ${ex9Reps} (light weight)`);
+        console.log(`D2: ${ex10} - 2 x ${ex10Reps} (light weight)`);
+        console.log('');
+        console.log(`Optional: ${ex11} - 2 x ${ex11Reps}`);
         console.log('');
     };
 };
