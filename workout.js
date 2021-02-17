@@ -24,13 +24,14 @@ const exerciseBank = {
     antiExtension: ['SL Plank PB Rollouts', 'Low Plank', 'High Plank', 'Ab Wheel Rollouts', 'Stir the Pot', 'SA Plank', 'Hollow Body Hold', 'Hollow Body Rocks', 'Dead Bugs', 'Contralateral Dead Bugs', 'Side Plank', 'Copenhagen Plank', 'Forward Palloff Press', 'OH Palloff Press', 'Bird Dog Plank', 'Quadruped Plank (hands on sliders) Rollouts'],
     carry: ['Farmers Carry', 'Suitcase Carry', 'Double Overhead Carry', 'Single Overhead Carry', 'Double Waiters Carry', 'Single Waiters Carry', 'Trap Bar Carry', 'Front Curled Carry'],
     straightArmPulldown: ['Kneeling Straight Arm Pulldown', 'Kneeling SA Straight Arm Pulldown', '1/2 Kneeling Straight Arm Pulldown', '1/2 Kneeling SA Straight Arm Pulldown', 'Standing Straight Arm Pulldown', 'DB Pullovers'],
+    medBallThrows: [],
     lowerWarmUp: ['Mini Band Lateral Walk', 'Mini Band Glute Bridge', 'Mini Band Monster Walk', 'Mini Band Clamshells', 'Mini Band Standing Clamshells', 'Mini Band Squats', 'Mini Band Stationary Hip Abductions', 'Mini Band Static Glute Bridge Abductions'],
     upperWarmUp: ['Band W Pulls', 'Y-cuffs', 'Prone OH Press', 'Ant Band OH Press', 'Band Snow Angels', 'Bent Over DB W Pulls', 'Prone Incline DB W Pulls', 'Band ATWYs'],
     balance: ['SL Balance', 'SL Balance on Pad', 'SL Balance on Disc', 'SL Balance w/ Head Swivels', 'SL Balance on Pad w/ Head Swivels', 'SL Balance on Disc w/ Head Swivels', 'SL Balance w/ Eyes Closed', 'SL Balance on Pad w/ Eyes Closed', 'SL Balance on Disc w/ Eyes Closed', 'DB Weighted SL Balance on Floor']
 };
 
 function generateTemplate() {
-    return Math.floor(Math.random() * 12);
+    return Math.floor(Math.random() * 13);
 };
 
 function generateExercise(array) {
@@ -562,6 +563,52 @@ function gatherWorkout() {
         console.log(`D2: ${ex10} - 2 x ${ex10Reps} (light weight)`);
         console.log('');
         console.log(`Optional: ${ex11} - 2 x ${ex11Reps}`);
+        console.log('');
+    };
+
+    if (template === 12) {
+        const ex1 = generateExercise(exerciseBank.medBallThrows);
+        const ex2 = generateExercise(exerciseBank.horizontalPull);
+        const ex3 = generateExercise(exerciseBank.horizontalPush);
+        const ex4 = generateExercise(exerciseBank.verticalPull);
+        const ex5 = generateExercise(exerciseBank.verticalPush);
+        const ex6 = generateExercise(exerciseBank.straightArmPulldown);
+        const ex7 = generateExercise(exerciseBank.squat);
+        const ex8 = generateExercise(exerciseBank.hinge);
+        const ex9 = generateExercise(exerciseBank.lunge);
+        const ex10 = generateExercise(exerciseBank.isolation);
+
+        const ex1Reps = Math.floor(Math.random() * 5 + 2);
+        const ex2Reps = Math.floor(Math.random() * 4 + 4);
+        const ex3Reps = Math.floor(Math.random() * 5 + 2);
+        const ex4Reps = Math.floor(Math.random() * 4 + 4);
+        const ex5Reps = Math.floor(Math.random() * 4 + 3);
+        const ex6Reps = Math.floor(Math.random() * 3 + 5);
+        const ex7Reps = Math.floor(Math.random() * 3 + 2);
+        const ex8Reps = Math.floor(Math.random() * 2 + 3);
+        const ex9Reps = Math.floor(Math.random() * 2 + 3);
+        const ex10Reps = Math.floor(Math.random() * 5 + 8);
+
+        console.log('');
+        console.log('Heavy Upper and Light Explosive Lower Day');
+        console.log('');
+        console.log(`W1: ${warmUpA} - 2 x 10`);
+        console.log(`W2: ${warmUpB} - 2 x 10`);
+        console.log(`W3: ${warmUpC} - 2 x 20 seconds`);
+        console.log('');
+        console.log(`A1: ${ex1} - 2 x ${ex1Reps}`);
+        console.log(`A2: ${ex2} - 2 x ${ex2Reps}`);
+        console.log(`A3: ${ex3} - 2 x ${ex3Reps}`);
+        console.log('');
+        console.log(`B1: ${ex4} - 2 x ${ex4Reps}`);
+        console.log(`B2: ${ex5} - 2 x ${ex5Reps}`);
+        console.log(`B3: ${ex6} - 2 x ${ex6Reps}`);
+        console.log('');
+        console.log(`C1: ${ex7} Jumps - 2 x ${ex7Reps} (light weight)`);
+        console.log(`C2: ${ex8} Jumps - 2 x ${ex8Reps} (light weight)`);
+        console.log(`D1: ${ex9} Jumps - 2 x ${ex9Reps} (light weight)`);
+        console.log('');
+        console.log(`D2: ${ex10} - 2 x ${ex10Reps} (light weight)`);
         console.log('');
     };
 };
