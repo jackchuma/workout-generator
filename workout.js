@@ -24,7 +24,7 @@ const exerciseBank = {
     antiExtension: ['SL Plank PB Rollouts', 'Low Plank', 'High Plank', 'Ab Wheel Rollouts', 'Stir the Pot', 'SA Plank', 'Hollow Body Hold', 'Hollow Body Rocks', 'Dead Bugs', 'Contralateral Dead Bugs', 'Side Plank', 'Copenhagen Plank', 'Forward Palloff Press', 'OH Palloff Press', 'Bird Dog Plank', 'Quadruped Plank (hands on sliders) Rollouts'],
     carry: ['Farmers Carry', 'Suitcase Carry', 'Double Overhead Carry', 'Single Overhead Carry', 'Double Waiters Carry', 'Single Waiters Carry', 'Trap Bar Carry', 'Front Curled Carry'],
     straightArmPulldown: ['Kneeling Straight Arm Pulldown', 'Kneeling SA Straight Arm Pulldown', '1/2 Kneeling Straight Arm Pulldown', '1/2 Kneeling SA Straight Arm Pulldown', 'Standing Straight Arm Pulldown', 'DB Pullovers'],
-    medBallThrows: [],
+    medBallThrows: ['MB Slams', 'MB Twisting Throws', 'Kneeling MB OHF Toss', 'MB UHF Toss', 'MB Side Slams', 'MB Rebound Bench Throws', 'Kneeling MB Bench Throws', '1/2 Kneeling MB Shot Throws'],
     lowerWarmUp: ['Mini Band Lateral Walk', 'Mini Band Glute Bridge', 'Mini Band Monster Walk', 'Mini Band Clamshells', 'Mini Band Standing Clamshells', 'Mini Band Squats', 'Mini Band Stationary Hip Abductions', 'Mini Band Static Glute Bridge Abductions'],
     upperWarmUp: ['Band W Pulls', 'Y-cuffs', 'Prone OH Press', 'Ant Band OH Press', 'Band Snow Angels', 'Bent Over DB W Pulls', 'Prone Incline DB W Pulls', 'Band ATWYs'],
     balance: ['SL Balance', 'SL Balance on Pad', 'SL Balance on Disc', 'SL Balance w/ Head Swivels', 'SL Balance on Pad w/ Head Swivels', 'SL Balance on Disc w/ Head Swivels', 'SL Balance w/ Eyes Closed', 'SL Balance on Pad w/ Eyes Closed', 'SL Balance on Disc w/ Eyes Closed', 'DB Weighted SL Balance on Floor']
