@@ -25,13 +25,14 @@ const exerciseBank = {
     carry: ['Farmers Carry', 'Suitcase Carry', 'Double Overhead Carry', 'Single Overhead Carry', 'Double Waiters Carry', 'Single Waiters Carry', 'Trap Bar Carry', 'Front Curled Carry'],
     straightArmPulldown: ['Kneeling Straight Arm Pulldown', 'Kneeling SA Straight Arm Pulldown', '1/2 Kneeling Straight Arm Pulldown', '1/2 Kneeling SA Straight Arm Pulldown', 'Standing Straight Arm Pulldown', 'DB Pullovers'],
     medBallThrows: ['MB Slams', 'MB Twisting Throws', 'Kneeling MB OHF Toss', 'MB UHF Toss', 'MB Side Slams', 'MB Rebound Bench Throws', 'Kneeling MB Bench Throws', '1/2 Kneeling MB Shot Throws'],
+    calves: ['Standing Calf Raises', 'Standing Calf Raises Knees Bent', 'Standing Calf Raises Off Step', 'Standing Calf Raises Off Step Knees Bent', 'Standing SL Calf Raises', 'Standing SL Calf Raises Knees Bent', 'Standing SL Calf Raises Off Step', 'Standing SL Calf Raises Off Step Knees Bent'],
     lowerWarmUp: ['Mini Band Lateral Walk', 'Mini Band Glute Bridge', 'Mini Band Monster Walk', 'Mini Band Clamshells', 'Mini Band Standing Clamshells', 'Mini Band Squats', 'Mini Band Stationary Hip Abductions', 'Mini Band Static Glute Bridge Abductions'],
     upperWarmUp: ['Band W Pulls', 'Y-cuffs', 'Prone OH Press', 'Ant Band OH Press', 'Band Snow Angels', 'Bent Over DB W Pulls', 'Prone Incline DB W Pulls', 'Band ATWYs'],
     balance: ['SL Balance', 'SL Balance on Pad', 'SL Balance on Disc', 'SL Balance w/ Head Swivels', 'SL Balance on Pad w/ Head Swivels', 'SL Balance on Disc w/ Head Swivels', 'SL Balance w/ Eyes Closed', 'SL Balance on Pad w/ Eyes Closed', 'SL Balance on Disc w/ Eyes Closed', 'DB Weighted SL Balance on Floor']
 };
 
 function generateTemplate() {
-    return Math.floor(Math.random() * 13);
+    return Math.floor(Math.random() * 14);
 };
 
 function generateExercise(array) {
@@ -609,6 +610,53 @@ function gatherWorkout() {
         console.log(`D1: ${ex9} Jumps - 2 x ${ex9Reps} (light weight)`);
         console.log('');
         console.log(`D2: ${ex10} - 2 x ${ex10Reps} (light weight)`);
+        console.log('');
+    };
+
+    if (template === 13) {
+        const ex1 = generateExercise(exerciseBank.balance);
+        const ex2 = generateExercise(exerciseBank.antiExtension);
+        const ex3 = generateExercise(exerciseBank.squat);
+        const ex4 = generateExercise(exerciseBank.explosive);
+        const ex5 = generateExercise(exerciseBank.gluteBridge);
+        const ex6 = generateExercise(exerciseBank.hinge);
+        const ex7 = generateExercise(exerciseBank.lunge);
+        const ex8 = generateExercise(exerciseBank.calves);
+
+        const ex1Reps = Math.floor(Math.random() * 3 + 2);
+        const ex2Reps = Math.floor(Math.random() * 3 + 2);
+        const ex3Reps = Math.floor(Math.random() * 4 + 2);
+        const ex4Reps = Math.floor(Math.random() * 2 + 4);
+        const ex5Reps = Math.floor(Math.random() * 4 + 5);
+        const ex6Reps = Math.floor(Math.random() * 3 + 3);
+        const ex7Reps = Math.floor(Math.random() * 2 + 4);
+        const ex8Reps = Math.floor(Math.random() * 3 + 8);
+
+        console.log('');
+        console.log('Lower Body Day');
+        console.log('');
+        console.log(`W1: ${warmUpA} - 2 x 10`);
+        console.log(`W2: ${warmUpB} - 2 x 10`);
+        console.log(`W3: ${warmUpC} - 2 x 20 seconds`);
+        console.log('');
+        console.log(`A1: ${ex1} - 2 x ${ex1Reps}0 seconds`);
+        console.log(`A2: ${ex2} - 2 x ${ex2Reps}0 seconds`);
+        console.log(`A3: ${ex3} - 2 x ${ex3Reps}`);
+        console.log(`A4: ${ex4} - 2 x ${ex4Reps}`);
+        console.log('');
+        console.log(`B1: ${ex5} - 2 x ${ex5Reps}`);
+        console.log(`B2: ${ex6} - 2 x ${ex6Reps}`);
+        console.log('');
+        console.log(`C1: ${ex7} - 2 x ${ex7Reps}`);
+        console.log(`C2: ${ex8} - 2 x ${ex8Reps}`);
+        console.log('');
+        console.log('OPTIONAL:')
+        console.log(`D1: Max Effort Leg Extensions - 2 x 10+`);
+        console.log(`D2: Max Effort Leg Curls - 2 x 8+`);
+        console.log('D3: Max Effort Leg Press - 2 x 10+')
+        console.log('');
+        console.log('OPTIONAL:')
+        console.log('E1: Sprints - 3-5 x 100 yards')
         console.log('');
     };
 };
