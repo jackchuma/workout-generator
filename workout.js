@@ -32,7 +32,7 @@ const exerciseBank = {
 };
 
 function generateTemplate() {
-    return Math.floor(Math.random() * 14);
+    return Math.floor(Math.random() * 15);
 };
 
 function generateExercise(array) {
@@ -657,6 +657,50 @@ function gatherWorkout() {
         console.log('');
         console.log('OPTIONAL:')
         console.log('E1: Sprints - 3-5 x 100 yards')
+        console.log('');
+    };
+
+    if (template === 14) {
+        const ex1 = generateExercise(exerciseBank.medBallThrows);
+        const ex2 = generateExercise(exerciseBank.horizontalPull);
+        const ex3 = generateExercise(exerciseBank.horizontalPush);
+        const ex4 = generateExercise(exerciseBank.verticalPull);
+        const ex5 = generateExercise(exerciseBank.verticalPush);
+        const ex6 = generateExercise(exerciseBank.straightArmPulldown);
+
+        const ex1Reps = Math.floor(Math.random() * 5 + 2);
+        const ex2Reps = Math.floor(Math.random() * 4 + 4);
+        const ex3Reps = Math.floor(Math.random() * 5 + 2);
+        const ex4Reps = Math.floor(Math.random() * 4 + 4);
+        const ex5Reps = Math.floor(Math.random() * 4 + 3);
+        const ex6Reps = Math.floor(Math.random() * 3 + 5);
+        const ex7Reps = Math.floor(Math.random() * 3 + 5);
+        const ex8Reps = Math.floor(Math.random() * 6 + 10);
+        const ex9Reps = Math.floor(Math.random() * 7 + 6);
+        const ex10Reps = Math.floor(Math.random() * 4 + 5);
+
+        console.log('');
+        console.log('Upper Body Day');
+        console.log('');
+        console.log(`W1: ${warmUpA} - 2 x 10`);
+        console.log(`W2: ${warmUpB} - 2 x 10`);
+        console.log(`W3: ${warmUpC} - 2 x 20 seconds`);
+        console.log('');
+        console.log(`A1: ${ex1} - 2 x ${ex1Reps}0 seconds`);
+        console.log(`A2: ${ex2} - 2 x ${ex2Reps}0 seconds`);
+        console.log(`A3: ${ex3} - 2 x ${ex3Reps}`);
+        console.log('');
+        console.log(`A4: ${ex4} - 2 x ${ex4Reps}`);
+        console.log(`B1: ${ex5} - 2 x ${ex5Reps}`);
+        console.log(`B2: ${ex6} - 2 x ${ex6Reps}`);
+        console.log('');
+        console.log(`C1: SL Lateral Raises - 2 x ${ex7Reps} per leg`);
+        console.log(`C2: Bent Over Lateral Raises - 2 x ${ex8Reps}`);
+        console.log('');
+        console.log(`D1: Skull Crushers - 2 x ${ex9Reps}`);
+        console.log(`D2: Standing Bicep Curls - 2 x ${ex10Reps}`);
+        console.log('');
+        console.log('E1: Max Effort Push Ups - 1 x Max Reps');
         console.log('');
     };
 };
