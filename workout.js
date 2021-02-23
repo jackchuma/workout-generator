@@ -32,7 +32,7 @@ const exerciseBank = {
 };
 
 function generateTemplate() {
-    return Math.floor(Math.random() * 15);
+    return Math.floor(Math.random() * 16);
 };
 
 function generateExercise(array) {
@@ -686,13 +686,13 @@ function gatherWorkout() {
         console.log(`W2: ${warmUpB} - 2 x 10`);
         console.log(`W3: ${warmUpC} - 2 x 20 seconds`);
         console.log('');
-        console.log(`A1: ${ex1} - 2 x ${ex1Reps}0 seconds`);
-        console.log(`A2: ${ex2} - 2 x ${ex2Reps}0 seconds`);
+        console.log(`A1: ${ex1} - 2 x ${ex1Reps}`);
+        console.log(`A2: ${ex2} - 2 x ${ex2Reps}`);
         console.log(`A3: ${ex3} - 2 x ${ex3Reps}`);
         console.log('');
-        console.log(`A4: ${ex4} - 2 x ${ex4Reps}`);
-        console.log(`B1: ${ex5} - 2 x ${ex5Reps}`);
-        console.log(`B2: ${ex6} - 2 x ${ex6Reps}`);
+        console.log(`B1: ${ex4} - 2 x ${ex4Reps}`);
+        console.log(`B2: ${ex5} - 2 x ${ex5Reps}`);
+        console.log(`B3: ${ex6} - 2 x ${ex6Reps}`);
         console.log('');
         console.log(`C1: SL Lateral Raises - 2 x ${ex7Reps} per leg`);
         console.log(`C2: Bent Over Lateral Raises - 2 x ${ex8Reps}`);
@@ -701,6 +701,38 @@ function gatherWorkout() {
         console.log(`D2: Standing Bicep Curls - 2 x ${ex10Reps}`);
         console.log('');
         console.log('E1: Max Effort Push Ups - 1 x Max Reps');
+        console.log('');
+    };
+
+    if (template === 15) {
+        const ex3 = generateExercise(exerciseBank.horizontalPull);
+        const ex7 = generateExercise(exerciseBank.verticalPull);
+
+        const ex1Reps = Math.floor(Math.random() * 3 + 6);
+        const ex2Reps = Math.floor(Math.random() * 5 + 6);
+        const ex3Reps = Math.floor(Math.random() * 3 + 6);
+        const ex4Reps = Math.floor(Math.random() * 2 + 5);
+        const ex5Reps = Math.floor(Math.random() * 3 + 4);
+        const ex6Reps = Math.floor(Math.random() * 7 + 6);
+        const ex7Reps = Math.floor(Math.random() * 3 + 4);
+        const ex8Reps = Math.floor(Math.random() * 2 + 4);
+
+        console.log('');
+        console.log('Arms Focused Day');
+        console.log('');
+        console.log(`W1: ${warmUpA} - 2 x 10`);
+        console.log(`W2: ${warmUpB} - 2 x 10`);
+        console.log(`W3: ${warmUpC} - 2 x 20 seconds`);
+        console.log('');
+        console.log(`A1: DB Bicep Curls from Squat Position - 2 x ${ex1Reps}`);
+        console.log(`A2: Cable Tricep Pushdowns - 2 x ${ex2Reps}`);
+        console.log(`A3: Underhand Grip ${ex3} - 2 x ${ex3Reps}`);
+        console.log(`A4: Close Grip Barbell Bench Press - 2 x ${ex4Reps}`);
+        console.log('');
+        console.log(`B1: DB Bicep Curls from Lunge Position - 2 x ${ex5Reps} per leg`);
+        console.log(`B2: Skull Crusher - 2 x ${ex6Reps}`);
+        console.log(`B3: Underhand Grip ${ex7} - 2 x ${ex7Reps}`);
+        console.log(`B4: Close Grip Barbell Overhead Press - 2 x ${ex8Reps}`);
         console.log('');
     };
 };
