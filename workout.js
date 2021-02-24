@@ -16,6 +16,9 @@ const exerciseBank = {
     singleArmVerticalPull: ['Seated SA Lat Pulldown', 'Split Stance SA Lat Pulldown', 'Kneeling SA Lat Pulldown', '1/2 Kneeling SA Lat Pulldown'],
     horizontalPush: ['Barbell Bench Press', 'DB Bench Press', 'Barbell Incline Bench Press', 'Barbell Floor Press', 'DB Floor Press', 'Push Up', 'Iso Glute Bridge DB Bench Press (T-spine on bench)', 'SL Push Ups foot on med ball', 'Diamond Push Ups', 'Chinese Plank Sprinter Chaos T-Bench Press', 'PB SA DB Bench', 'SA Floor Press', 'Bottoms-up Bench Press', 'Bottoms-up Floor Press', 'Bottoms-up Bench on PB', 'Bottoms-up Trap Bar Bench Press', 'TRX Push Ups', 'Push Ups on PB', 'Foam Roller DB Bench', 'Foam Roller SA DB Bench', 'DB Bench on PB', 'DB Incline Bench Press', 'DB SA Incline Bench Press', 'Bottoms-up Incline Bench Press'],
     stabilityHorizontalPush: ['Bottoms-up Bench Press', 'Bottoms-up Floor Press', 'Bottoms-up Bench on PB', 'Bottoms-up Trap Bar Bench Press', 'TRX Push Ups', 'Push Ups on PB', 'Foam Roller DB Bench', 'Foam Roller SA DB Bench', 'DB Bench on PB', 'DB SA Bench on PB', 'Bottoms-up Incline Bench Press'],
+    chestExplosive: [],
+    stableHorizontalPush: [],
+    inclineHorizontalPush: [],
     horizontalPull: ['Prone Incline DB Row', 'Bent Over Barbell Row', 'Seated Cable Row', 'Trap Bar Bent Over Row', 'Sprinter Inverted Rows', 'Tripod DB Rows', 'High Plank DB Rows', 'Split Stance (Rear foot on chaos band) RDL + Barbell Row', 'SA TRX Rows', 'SA Seated Cable Row', 'SL Inverted Rows', 'SA SL Inverted Rows', 'SL Bent Over Barbell Rows', 'SL Bent Over DB Rows', 'SL SA Bent Over DB Rows', 'Bird Dog Rows', 'Kickstand Bent Over Barbell Rows', 'Kickstand Bent Over DB Rows', 'Kickstand Bent Over SA Rows'],
     coreHorizontalPull: ['SA TRX Rows', 'Tripod DB Rows', 'High Plank DB Rows', 'SA Seated Cable Row', 'SA SL Inverted Rows', 'SL SA Bent Over DB Rows', 'Bird Dog Rows', 'Kickstand Bent Over SA Rows'],
     stabilityHorizontalPull: ['SL Inverted Rows', 'SA SL Inverted Rows', 'SA Inverted Rows', 'SL Bent Over Barbell Rows', 'SL Bent Over DB Rows', 'SL SA Bent Over DB Rows', 'Bird Dog Rows', 'Kickstand Bent Over Barbell Rows', 'Kickstand Bent Over DB Rows', 'Kickstand Bent Over SA Rows'],
@@ -32,7 +35,7 @@ const exerciseBank = {
 };
 
 function generateTemplate() {
-    return Math.floor(Math.random() * 16);
+    return Math.floor(Math.random() * 17);
 };
 
 function generateExercise(array) {
@@ -733,6 +736,50 @@ function gatherWorkout() {
         console.log(`B2: Skull Crusher - 2 x ${ex6Reps}`);
         console.log(`B3: Underhand Grip ${ex7} - 2 x ${ex7Reps}`);
         console.log(`B4: Close Grip Barbell Overhead Press - 2 x ${ex8Reps}`);
+        console.log('');
+    };
+
+    if (template === 16) {
+        const ex1 = generateExercise(exerciseBank.chestExplosive);
+        const ex2 = generateExercise(exerciseBank.horizontalPull);
+        const ex3 = generateExercise(exerciseBank.stableHorizontalPush);
+        const ex4 = generateExercise(exerciseBank.verticalPull);
+        const ex5 = generateExercise(exerciseBank.verticalPush);
+        const ex6 = generateExercise(exerciseBank.inclineHorizontalPush);
+        const ex7 = generateExercise(exerciseBank.squat);
+        const ex8 = generateExercise(exerciseBank.hinge);
+        const ex9 = generateExercise(exerciseBank.lunge);
+
+        const ex1Reps = Math.floor(Math.random() * 5 + 2);
+        const ex2Reps = Math.floor(Math.random() * 2 + 4);
+        const ex3Reps = Math.floor(Math.random() * 5 + 2);
+        const ex4Reps = Math.floor(Math.random() * 3 + 4);
+        const ex5Reps = Math.floor(Math.random() * 3 + 3);
+        const ex6Reps = Math.floor(Math.random() * 2 + 5);
+        const ex7Reps = Math.floor(Math.random() * 3 + 2);
+        const ex8Reps = Math.floor(Math.random() * 2 + 3);
+        const ex9Reps = Math.floor(Math.random() * 2 + 3);
+
+        console.log('');
+        console.log('Chest Focused Day');
+        console.log('');
+        console.log(`W1: ${warmUpA} - 2 x 10`);
+        console.log(`W2: ${warmUpB} - 2 x 10`);
+        console.log(`W3: ${warmUpC} - 2 x 20 seconds`);
+        console.log('');
+        console.log(`A1: ${ex1} - 2 x ${ex1Reps}`);
+        console.log(`A2: ${ex2} - 2 x ${ex2Reps}`);
+        console.log(`A3: ${ex3} - 2 x ${ex3Reps}`);
+        console.log('');
+        console.log(`B1: ${ex4} - 2 x ${ex4Reps} (light weight)`);
+        console.log(`B2: ${ex5} - 2 x ${ex5Reps} (light weight)`);
+        console.log('');
+        console.log(`C1: ${ex6} - 2 x ${ex6Reps}`);
+        console.log(`C2: ${ex7} - 2 x ${ex7Reps} (light weight)`);
+        console.log('');
+        console.log(`D1: ${ex8} - 2 x ${ex8Reps} (light weight)`);
+        console.log(`D2: ${ex9} - 2 x ${ex9Reps} (light weight)`);
+        console.log(`D3: Cable Chest Fly - 2 x 10+`)
         console.log('');
     };
 };
